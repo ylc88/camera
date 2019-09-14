@@ -208,7 +208,7 @@ public class Camera {
             mediaRecorder.release();
         }
         mediaRecorder = new MediaRecorder();
-
+        Log.e("yanlc", recordingProfile.videoBitRate+  "  *  "+ recordingProfile.videoFrameRate);
         // There's a specific order that mediaRecorder expects. Do not change the order
         // of these function calls.
         if (enableAudio) mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
